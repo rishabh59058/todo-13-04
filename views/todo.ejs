@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>
+ToDo app
+</title>
+<script src="/assets/todo-list.js"></script>
+<link href="/assets/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  <h1 style="text-align:center; color:blue;">
+    Predicted Lineup:
+  </h1>
+<div class="clearfix container bordered" style="font-size:150%;">
+  <div class="left">
+    <p>
+      Team 1
+    </p>
+<ul>
+<% for(var i=0;i<11;i++){%>
+<li><%=todos[i].item %></li>
+<%}%>
+</ul>
+</div>
+<div class="right">
+  <p>
+    Team 2
+  </p>
+<ul>
+<% for(var i=12;i<24;i++){%>
+<li><%=todos[i].item %></li>
+<%}%>
+</ul>
+</div>
+</div>
+</body>
+</html>
